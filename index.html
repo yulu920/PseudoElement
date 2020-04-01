@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#d1{
+				width: 0px;
+				height: 0px;
+				background: transparent;
+				/* border: 20px solid aquamarine; */
+				border-top: 1.25rem solid transparent;
+				border-bottom: 1.25rem solid transparent;
+				border-left: 1.25rem solid transparent;
+				border-right: 1.25rem solid orange;
+			}
+			.chat1{
+				width: 31.25rem;
+				line-height: 100px;
+				padding: 30px;/* 内边距 */
+				font-size: 30px;
+				background:greenyellow ;
+				margin: 0 auto;
+				border-radius: 1.875rem;/* 圆角 */
+				position: relative;
+				left:-150px
+				}
+			.chat1:before{
+				content: "";/* content必须要写 */
+				display: inline-block;
+				width: 0px;
+				height: 0px;
+			
+				/* border: 20px solid aquamarine; */
+				border-top: 1.25rem solid transparent;
+				border-bottom: 1.25rem solid transparent;
+				border-left: 2.5rem solid transparent;
+				border-right: 2.5rem solid greenyellow;
+				position: absolute;
+				left: -80px;
+				top: 36px;
+			}
+			
+			
+			.chat2{
+				width: 31.25rem;
+				line-height: 100px;
+				padding: 30px;/* 内边距 */
+				font-size: 30px;
+				background:greenyellow ;
+				margin: 0 auto;
+				border-radius: 1.875rem;/* 圆角 */
+				position: relative;
+				top:100px;
+				left:100px ;
+				}
+			.chat2:after{
+					content:"";
+					display: inline-block;	
+					width: 0px;
+					height: 0px;
+					/* border: 20px solid aquamarine; */
+					border-top: 1.25rem solid transparent;
+					border-bottom: 1.25rem solid transparent;
+					border-left: 2.5rem solid greenyellow;
+					border-right: 2.5rem solid transparent;
+					position: absolute;
+					left: 560px;
+					top: 36px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1"></div>
+		<div class="chat1">
+			吃什么？
+		</div>
+		<div class="chat2">
+		   泡面
+		</div>
+		
+		
+	</body>
+</html>
